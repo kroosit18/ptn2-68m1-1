@@ -101,7 +101,7 @@
 
   <script>
     let attendanceRecords = [];
-    const studentListUrl = 'https://opensheet.elk.sh/1AE9Bg6B6RbEzcQjz2UyCTLAzCxE_-13t23v88WunCIM/Name';
+    const studentListUrl = 'https://opensheet.elk.sh/19TG9bGVszTJKA7tKU3XO-FuBXsCGdoXB4Jxg7PpI32k/Name';
 
     window.onload = function() {
       // Initialize LIFF app with login required
@@ -213,7 +213,7 @@
     function saveToSheet(records) {
       $.LoadingOverlay("show");
 
-      const url = 'https://script.google.com/macros/s/AKfycbwWNYxeXTGtYvnc5wxW9NV9a6xMe-9ARcIDR39xijuh_N7voXJpE_8BVcF1OA1PI7wwpw/exec'; // Replace with your web app URL
+      const url = 'https://script.google.com/macros/s/AKfycbyYW4CSqzUbNkI-fqIAT7S7TMjCNGlZp7moP-h9lFdDXo8oNjFuiAZu28G7MC62gSjSng/exec'; // Replace with your web app URL
 
       $.post(url, JSON.stringify(records), function(data) {
         $.LoadingOverlay("hide");
